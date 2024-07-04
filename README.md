@@ -3,7 +3,6 @@ Create a DRF application that manages a simple todo list. The API should allow u
 
 Bonus:
 added basic authentication to secure the API. we cretesuper to create credentils for api using 6th step below 
-# --------------------------------------------------------------------------------------------------------------------------
 
 # instructions on how to run the application locally using  git bash
 
