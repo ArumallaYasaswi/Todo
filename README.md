@@ -1,7 +1,51 @@
 # Todo
 Create a DRF application that manages a simple todo list. The API should allow users to perform CRUD (Create, Read, Update, Delete) operations on the todo items.
 
+Bonus:
+added basic authentication to secure the API. we cretesuper to create credentils for api using 6th step below 
+# --------------------------------------------------------------------------------------------------------------------------
 
+# instructions on how to run the application locally using  git bash
+
+1. clone the repostitory
+(venv)
+$git clone <repostory>
+
+2. create virtul envirtaul enevriment and activate
+(venv)
+i. $installing  :pip install virtualenv
+ii.$virtualenv venv
+iii.$ source venv/scripts/activate
+
+
+3. move to project folder(todolist) 
+(venv)
+$cd todolist 
+
+4. install following packages using pip
+(venv)
+$pip install -r requirements.txt
+
+5. perform migrations as to create mi
+$ python manage.py makemigrations
+$ python manage.py migrate
+
+6. setup user account create username and password using below command
+(venv)
+$winpty python manage.py createsuperuser 
+username:user1
+email:user1@gmail.com
+password:.................
+password:.................
+Superuser created successfully.
+
+7. run Todo project(Drf application) on local host server using port 8080
+(venv)
+$python manage.py runserver 8080
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------
 # http end points
 
 Endpoint: POST /todos/
@@ -226,3 +270,5 @@ and error messages.
 Write clear and concise code with comments explaining the logic.
 Provide a README.md file with instructions on how to run the application locally.
 
+Bonus:
+● Implement pagination for the GET /todos/ endpoint. 
