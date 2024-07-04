@@ -46,7 +46,8 @@ $python manage.py runserver 8080
 
 # --------------------------------------------------------------------------------------------------------------------------
 # http end points
-
+Create todo item
+================
 Endpoint: POST /todos/
 Request Body: JSON object containing title (string) and description (string, optional)
 Response: JSON object with the created todo item including a unique id, title, description, and
