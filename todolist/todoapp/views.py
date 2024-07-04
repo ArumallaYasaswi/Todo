@@ -85,7 +85,7 @@ class TodoGETUpdateDeleteBYIDView(APIView):
         todo = self.get_object(pk)
 
         # verifying `id` field not passed in requested data as `id`(read-only) field cannot be updated
-        if "id" in request.data:
+        if "id" not in request.data:
 
             # serializing requested data
             serializer = TodoSerializer(data=request.data)
